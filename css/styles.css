@@ -107,7 +107,6 @@ img {
     display: flex;
     margin-right: 50px;
 }
-
 .header-contacts{
     font-style: normal;
     font-weight: 500;
@@ -126,8 +125,23 @@ img {
     padding: 0;
 }
 
+.header-item{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.header-icon{
+    margin-right: 10px;
+}
+
 .header-email{
     margin-right: 50px;
+}
+
+.header-contacts:hover .header-icon, 
+.header-contacts:focus .header-icon{
+    fill: var(--main-active-color);
 }
 
 .header-contacts:hover, 
@@ -164,7 +178,9 @@ img {
 }
 
 .main-title-section{
-    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/background-img.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .main-button{
@@ -192,6 +208,16 @@ img {
 
 .specialisation-item{
     width: 270px;
+}
+
+.specialisation-container{
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .specialisation-item:not(:last-child){
@@ -277,7 +303,89 @@ img {
     text-align: center;
     letter-spacing: 0.03em;    
     color: #757575;
+    margin-bottom: 16px;
 }
+
+.team-social-list{
+    display: flex;
+    justify-content: center;
+}
+
+.team-social-item{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.team-social-item:last-child{
+    margin-right: 0;
+}
+
+.team-social-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    fill:  #AFB1B8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus{
+    background-color: #2196F3;
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon{
+    fill: white;
+}
+
+
+.client-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.client-list{
+    display: flex;
+}
+
+.client-item{
+    margin-right: 30px;
+}
+
+.client-item:last-child{
+    margin-right: 0;
+}
+
+.client-container{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-icon{
+    fill: #AFB1B8;
+}
+
+.client-container:hover, 
+.client-container:focus,
+.client-container:hover .client-icon,
+.client-container:focus .client-icon{
+    border-color: var(--main-active-color);
+    fill: var(--main-active-color);
+}
+
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
 
@@ -333,10 +441,63 @@ img {
     letter-spacing: 0.03em;
 }
 
-.footer {
-    background-color: #2F303A;
+.footer-link-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--white-bg-txt);
 }
 
+.footer-social-list{
+    display: flex;
+}
+
+.footer-social-item{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.footer-social-item:last-child {
+    margin-right: 0;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF10;
+    fill: white;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #2196F3;
+}
+
+.footer {
+    background-color: #2F303A;
+    display: flex;
+}
+
+.addres-container{
+    margin-right: 70px;
+}
+
+.social-container{
+    padding-top: 12px;
+    margin-bottom: 40px;
+}
+
+.footer .container{
+    display: flex;
+}
 /*-----------------------------------------PORTFOLIO-----------------------------------------*/
 
 .button {
@@ -379,11 +540,16 @@ img {
 }
 
 .site-item{
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 370px;
     flex-basis: calc(100% \ 3 - 30px);
     margin: 15px;
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
+}
+
+.site-item:hover,
+.site-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
