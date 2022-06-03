@@ -26,8 +26,20 @@
                 </ul>
             </nav>
             <ul class="contact-list list">
-                <a class="header-contacts header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="header-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="header-item">
+                    <a class="header-contacts header-email link" href="mailto:info@devstudio.com">
+                        <svg class="header-icon" width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a class="header-contacts link" href="tel:+380961111111">
+                        <svg class="header-icon" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -142,14 +154,55 @@
     <!--WebStudio Footer-->
     <footer class="footer">
         <div class="container">
-            <a class="footer-company-logo1 link" href="">Web<span class="footer-company-logo2 link">Studio</span></a>
-            <address>
-                <p class="location">г. Київ, пр-т Лесі Українки, 26</p>
-            </address>
-            <address>
-                <a class="footer-contacts footer-email link" href="mailto:info@example.com">info@example.com</a>
-                <a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </address>
+            <div class="addres-container">
+                <a class="footer-company-logo1 link" href="">Web<span class="footer-company-logo2 link">Studio</span></a>
+                <address>
+                    <ul class="location-list list">
+                        <li class="location-item">
+                            <p class="location">г. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
+                        <li class="location-item">
+                            <a class="footer-contacts footer-email link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="location-item">
+                            <a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social-container">
+                <h3 class="footer-link-title">Приєднуйтесь</h3>
+                <ul class="footer-social-list list">
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link link">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link link">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link link">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link link">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
