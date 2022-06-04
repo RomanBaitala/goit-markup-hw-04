@@ -74,11 +74,11 @@ img {
 
 .header-company-logo1 {
     color: var(--main-active-color);
+    margin-right: 93px;
 }
 
 .header-company-logo2 {
     color: black;
-    margin-right: 93px;
 }
 
 .header-company-logo1,
@@ -364,28 +364,25 @@ img {
     margin-right: 0;
 }
 
-.client-container{
+.client-link{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.client-icon{
-    fill: #AFB1B8;
-}
-
-.client-container:hover, 
-.client-container:focus,
-.client-container:hover .client-icon,
-.client-container:focus .client-icon{
+.client-link:hover, 
+.client-link:focus{
     border-color: var(--main-active-color);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{   
     fill: var(--main-active-color);
 }
-
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
 
